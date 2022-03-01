@@ -1,0 +1,156 @@
+/******************
+ELEMENT TAGS
+******************/
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 1.5rem;
+
+	font-weight: 400;
+
+	color: #f2f2f2;
+}
+
+footer {
+	background-color: #fff;
+}
+
+/*********************
+Class selectors
+*********************/
+.container {
+	max-width: 92rem;
+	max-height: 100vh;
+}
+
+.car-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: #e28625;
+	border-radius: 0.8rem;
+}
+
+/*******************
+Main Content
+*******************/
+.section-column {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	padding: 4.8rem;
+	border-radius: 0.8rem;
+}
+.bg-orange {
+	background-color: #e28625;
+}
+.bg-teal {
+	background-color: #006971;
+}
+.bg-green {
+	background-color: #004140;
+}
+
+.car-icon {
+	display: block;
+	width: 6.4rem;
+	padding-bottom: 1rem;
+}
+
+.heading-secondary {
+	font-family: "Big Shoulders Display", cursive;
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+.car-description {
+	color: #fff;
+	font-size: 1.5rem;
+	opacity: 75%;
+	line-height: 1.7;
+	padding-bottom: 6rem;
+}
+.btn {
+	border: none;
+	border-radius: 2rem;
+
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+
+	padding: 1.2rem;
+	width: 14.6rem;
+}
+
+.btn-yellow {
+	color: #e28625;
+}
+.btn-teal {
+	color: #006971;
+}
+.btn-green {
+	color: #004140;
+}
+
+.btn:hover,
+.btn:active {
+	cursor: pointer;
+	color: #f2f2f2;
+	box-shadow: 0 0 0 2px #f2f2f2;
+}
+
+.btn-yellow:hover,
+.btn-yellow:active {
+	background-color: #e28625;
+}
+.btn-teal:hover,
+.btn-teal:active {
+	background-color: #006971;
+}
+.btn-green:hover,
+.btn-green:active {
+	background-color: #004140;
+}
+
+/*******************
+Footer
+********************/
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: hsl(228, 45%, 44%);
+	padding-top: 4rem;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+}
+
+/*******************
+Mobile - Media Queries
+********************/
+@media (max-width: 60em) {
+	.container {
+		max-width: 32rem;
+	}
+
+	.car-section {
+		display: grid;
+		grid-template-columns: 1fr;
+		border-radius: 0.8rem;
+	}
+
+	.car-description {
+		padding-bottom: 0rem;
+	}
+}
