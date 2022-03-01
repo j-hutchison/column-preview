@@ -13,11 +13,14 @@ html {
 
 body {
 	display: flex;
+
+	align-items: center;
 	justify-content: center;
+
+	height: 100vh;
 
 	font-family: "Lexend Deca", sans-serif;
 	font-size: 1.5rem;
-
 	font-weight: 400;
 
 	color: #f2f2f2;
@@ -32,7 +35,6 @@ Class selectors
 *********************/
 .container {
 	max-width: 92rem;
-	max-height: 100vh;
 }
 
 .car-section {
