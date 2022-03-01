@@ -142,6 +142,10 @@ Footer
 Mobile - Media Queries
 ********************/
 @media (max-width: 60em) {
+	body {
+		height: 100%;
+	}
+
 	.container {
 		max-width: 32rem;
 	}
